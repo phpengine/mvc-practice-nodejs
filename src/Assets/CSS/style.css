@@ -1,1 +1,27 @@
-body {font-family: Arial;}
+/*Do a Mini CSS Reset*/
+html, body, header, footer, nav, article, div, section, ul, ol, li, h1, h2, h3, h4, h5, h6, p, input, form{
+    margin: 0; padding: 0;
+}
+
+/*CSS Starts*/
+html { width:100%; min-height: 300px; }
+body { font-family: Arial; text-align: center; }
+section#pageWrap{ margin: 0 auto; width: 960px;
+    border-left: 1px solid black; border-right: 1px solid black; display: inline-block; }
+div.pageRow { width: 100%; float:left; }
+section#pageWrap header { display: block; float: left; width:100%; }
+section#pageWrap header hr.menuSeparator {width:90%; height: 0.5px; display: block; margin: 0 auto; }
+section#pageWrap header h1 {margin: 10px 0px 5px 0px; width: 100%; display: block; font-size: 24pt; }
+section#pageWrap header nav {float:left; width: 100%; display: block; }
+section#pageWrap header nav ul#menu { display: block; min-height: 35px; margin: 0 auto; width:90%; }
+section#pageWrap header nav ul#menu li {float:left; list-style-type: none; min-width: 100px; min-height: 35px; }
+section#pageWrap header nav ul#menu li:hover {background-color: #DDDDDD; cursor: pointer; }
+section#pageWrap header nav ul#menu li a { min-width: 100px; min-height: 35px; display: block; }
+section#pageWrap header nav ul#menu li a span { position: relative; top: 8px; }
+
+section#pageWrap article { display: block; float: left; width:100%; }
+section#pageWrap article h1 {margin: 10px 0px 5px 0px; width: 100%; display: block; font-size:18pt; }
+
+section#pageWrap footer { display: block; float: left; width:100%; margin: 15px 0px 0px 0px; }
+section#pageWrap footer hr.menuSeparator {width:90%; height: 0.5px; display: block; margin: 0 auto; }
+section#pageWrap footer h5 {margin: 15px 0px 15px 0px; width: 100%; font-size: 14pt; }

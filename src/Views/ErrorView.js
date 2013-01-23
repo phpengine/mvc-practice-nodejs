@@ -1,8 +1,9 @@
 processView = function (PageVars) {
 
     var html = '';
-    html += '    <p>Oops! Something Went Wrong!</p>'+"\n";
-    html += '    <p>Error'+PageVars+'</p>'+"\n";
+    html += '    <h1>Oops! Something Went Wrong!</h1>'+"\n";
+    html += '    <p>Look\'s like there was a problem trying to do that.</p>'+"\n";
+    html += '    <p>App Error: '+PageVars+'</p>'+"\n";
 
     return html ;
 
