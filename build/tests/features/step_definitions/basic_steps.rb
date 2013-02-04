@@ -22,6 +22,10 @@ And /^The site title should be correct$/ do
   find('h1#siteTitle').text.should == "A Node JS MVC Application"
 end
 
+Then /^I should see an article title$/ do
+  find('h2.articleTitle')
+end
+
 Then /^I should see the site footer/ do
   find('h5#siteFooter')
 end

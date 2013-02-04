@@ -1,7 +1,7 @@
 processView = function (PageVars) {
 
     var html = '';
-    html += '    <h1>Home</h1>'+"\n";
+    html += '    <h2 class="articleTitle">Home</h2>'+"\n";
     html += '    <p>This Application is written entirely in Javascript on the server side. It uses an MVC pattern '+"\n";
     html += ' that I wrote myself, including Controllers, Layouts, Views, a Front Controller, Routing/Friendly URL\'s '+"\n";
     html += ' and a Web Server capable of handling and Autoloading CSS, Jpg, PNG and Client Side JS Assets. </p>'+"\n";

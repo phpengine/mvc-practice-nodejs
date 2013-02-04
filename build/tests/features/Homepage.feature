@@ -18,3 +18,7 @@ Feature: Reaching the website
   Scenario: The homepage has the correct site footer
     Given I visit the homepage
     And The site footer content should be correct
+
+  Scenario: The homepage has an article title
+    Given I visit the homepage
+    Then I should see an article title
