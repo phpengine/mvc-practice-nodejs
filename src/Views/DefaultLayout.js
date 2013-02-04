@@ -11,7 +11,7 @@ processView = function (PageVars, templateData) {
     html += '    <body>'+"\n";
     html += '        <section id="pageWrap">'+"\n";
     html += '            <header>'+"\n";
-    html += '                <h1>A Node JS MVC Application</h1>'+"\n";
+    html += '                <h1 id="siteTitle">A Node JS MVC Application</h1>'+"\n";
     html += '                <div class="pageRow" />'+"\n";
     html += '                   <hr class="menuSeparator" />'+"\n";
     html += '                </div>'+"\n";
@@ -36,7 +36,7 @@ processView = function (PageVars, templateData) {
     html += '                <div class="pageRow" />'+"\n";
     html += '                   <hr class="menuSeparator" />'+"\n";
     html += '                </div>'+"\n";
-    html += '                <h5>Written by David Amanshia of Golden Contact Computing</h5>'+"\n";
+    html += '                <h5 id="siteFooter">Written by David Amanshia of Golden Contact Computing</h5>'+"\n";
     html += '            </footer>'+"\n";
     html += '        </section>'+"\n";
     html += '    </body>'+"\n";

@@ -1,5 +1,5 @@
 Given /^I visit the homepage$/ do
-  visit "/index.php"
+  visit "/Index"
 end
 
 Then /^I should see "([^"]*)"$/ do |phrase|
@@ -14,10 +14,18 @@ Then /^I should see the field "([^"]*)"$/ do |phrase|
   find('#'+phrase)
 end
 
-Then /^I should see game Start Button$/ do
-  find('#startGameButton')
+Then /^I should see the site title$/ do
+  find('h1#siteTitle')
 end
 
-Given /^I Submit the Form$/ do
-  click_button("submit")
+And /^The site title should be correct$/ do
+  find('h1#siteTitle').text.should == "A Node JS MVC Application"
+end
+
+Then /^I should see the site footer/ do
+  find('h5#siteFooter')
+end
+
+And /^The site footer content should be correct$/ do
+  find('h1#siteTitle').text.should == "A Node JS MVC Application"
 end
